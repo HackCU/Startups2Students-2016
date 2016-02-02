@@ -234,23 +234,34 @@ ul li {
   padding: 0 !important;
   transition: all 0.2s linear 0s; }
   .navbar-solid .site-branding {
-    max-width: 120px; }
+    max-width: 360px;
+    display: block !important; }
 
 .site-branding {
   float: left;
   margin-top: 0;
   margin-left: 10px;
-  max-width: 250px;
+  max-width: 360px;
   transition: all 0.2s linear 0s; }
+  @media (min-width: 768px) {
+    .site-branding {
+      display: none; } }
+  .site-branding span {
+    color: #EEE;
+    display: block;
+    float: left;
+    margin: 10px; }
   .site-branding .logo {
     color: #fff;
+    float: left;
+    display: block;
     font-size: 14px;
     font-weight: 700;
     margin-right: 5px;
     letter-spacing: 3px;
     text-transform: uppercase; }
     .site-branding .logo img {
-      max-width: 100%; }
+      max-width: 120px; }
     .site-branding .logo:focus, .site-branding .logo:hover {
       text-decoration: none; }
 
@@ -263,6 +274,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
+  background: url(../images/backgrounds/hackcu.jpg) no-repeat center center/cover;
   background-color: #37aecc; }
   .site-header::before {
     content: "";
@@ -271,7 +283,7 @@ ul li {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.6); }
   .site-header .intro {
     color: #fff;
     position: relative;
