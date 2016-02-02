@@ -292,6 +292,11 @@ ul li {
     width: 100%;
     z-index: 1;
     padding: 0 15px; }
+    @media (max-width: 767px) {
+      .site-header .intro {
+        padding-top: 40px; }
+        .site-header .intro img {
+          display: none; } }
     .site-header .intro h2 {
       margin-top: 0px;
       font-size: 25px;

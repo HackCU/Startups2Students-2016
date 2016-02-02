@@ -123,6 +123,12 @@
   		width: 100%;
 		z-index: 1;
 		padding: 0 15px;
+		@media (max-width:767px) {
+		  padding-top: 40px;
+			img{
+		  	display: none;
+		  }
+		}
 
 		h2 {
 			margin-top: 0px;
